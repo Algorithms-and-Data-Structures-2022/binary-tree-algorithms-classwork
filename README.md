@@ -1,4 +1,4 @@
-# Classwork. Binary Search Tree
+# Classwork. Binary Search Tree Algorithms
 
 [![Build Status](../../actions/workflows/cmake.yml/badge.svg)](../../actions/workflows/cmake.yml)
 
