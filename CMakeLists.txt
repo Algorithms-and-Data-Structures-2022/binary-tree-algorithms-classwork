@@ -19,7 +19,7 @@ option(ENABLE_COMPILER_WARNINGS "Project compile warnings." ON)
 cmake_print_variables(CMAKE_BUILD_TYPE ENABLE_COMPILER_WARNINGS CMAKE_CXX_FLAGS)
 
 # Library
-add_library(bst STATIC src/binary_search_tree.cpp src/traversal_strategy.cpp)
+add_library(bst STATIC src/binary_search_tree.cpp src/traversal_strategy.cpp src/bst_algorithms.cpp)
 target_include_directories(bst PUBLIC include)
 
 # Executables

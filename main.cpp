@@ -1,6 +1,7 @@
 #include <iostream>  // cout
 
 #include "classwork/binary_search_tree.hpp"  // BinarySearchTree
+#include "classwork/bst_algorithms.hpp"
 
 using namespace classwork;
 using std::cout;
@@ -28,6 +29,9 @@ int main() {
   tree.Insert(4, 9);
   tree.Insert(7, 10);
   tree.Insert(13, 13);
+
+  // Вычисление высоты дерева
+  cout << "Tree's height: " << compute_tree_height(tree.root()) << '\n';
 
   // Обход дерева в соответствии с определенной стратегией
 
