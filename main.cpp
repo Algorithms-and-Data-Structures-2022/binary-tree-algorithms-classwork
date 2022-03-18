@@ -31,7 +31,10 @@ int main() {
   tree.Insert(13, 13);
 
   // Вычисление высоты дерева
-  cout << "Tree's height: " << compute_tree_height(tree.root()) << '\n';
+  cout << "Tree height: " << compute_tree_height(tree.root()) << '\n';
+
+  // Вычисление кол-во узлов в дереве (размер дерева)
+  cout << "Tree size: " << compute_tree_size(tree.root()) << '\n';
 
   // Обход дерева в соответствии с определенной стратегией
 
@@ -64,6 +67,30 @@ int main() {
 
   tree.Traverse(&df_strategy);
   cout << "Depth-first traversal\n";
+
+  // Преобразование двоичного дерева в массив
+  auto tree_array = tree_as_array(tree.root());
+
+  cout << "Tree as array:\n";
+
+  for (int index = 0; index < tree_array.size(); ++index) {
+
+    int parent_index = (index - 1) / 2;
+
+    if (tree_array[index] == nullptr) {
+      cout << '-';
+    } else {
+      cout << tree_array[index]->key;
+    }
+
+    if (tree_array[parent_index] != nullptr && index != 0) {
+      cout << '[' << tree_array[parent_index]->key << ']';
+    } else {
+      cout << '[' << '-' << ']';
+    }
+
+    cout << '\t';
+  }
 
   return 0;
 }
