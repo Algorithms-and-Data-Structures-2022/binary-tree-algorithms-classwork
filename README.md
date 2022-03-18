@@ -1,10 +1,13 @@
-# C++ classwork template
+# Classwork. Binary Search Tree
 
 [![Build Status](../../actions/workflows/cmake.yml/badge.svg)](../../actions/workflows/cmake.yml)
 
 ## Описание
 
-Список рассмотренных тем и ссылки на полезные ресурсы.
+Рассмотрены следующие темы:
+- обход двоичного дерева (_binary tree traversal_)
+  - в глубину (_depth-first_): инфиксный, префиксный, постфиксный
+  - в ширину (_breadth-first_)
 
 Структура проекта:
 - [_src_](src) - исходный код;
