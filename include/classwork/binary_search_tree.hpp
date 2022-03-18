@@ -1,6 +1,6 @@
 #pragma once
 
-#include "classwork/node.hpp"                // Node
+#include "classwork/private/node.hpp"                // Node
 #include "classwork/traversal_strategy.hpp"  // TraversalAlgorithm
 
 namespace classwork {

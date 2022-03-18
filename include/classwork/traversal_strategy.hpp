@@ -2,7 +2,7 @@
 
 #include <ostream>
 
-#include "classwork/node.hpp"  // Node
+#include "classwork/private/node.hpp"  // Node
 
 namespace classwork {
 
