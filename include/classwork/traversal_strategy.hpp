@@ -6,12 +6,11 @@
 
 namespace classwork {
 
-  // интерфейс алгоритма обхода узлов дерева
+  /**
+   * Интерфейс обхода узлов двоичного дерева.
+   */
   struct TraversalStrategy {
 
-    /**
-     * Интерфейс обхода узлов двоичного дерева.
-     */
     virtual ~TraversalStrategy() = default;
 
     /**
@@ -21,8 +20,6 @@ namespace classwork {
      */
     virtual void Print(Node* node, std::ostream& os) const = 0;
   };
-
-  inline constexpr char kDelimiter = '\t';
 
   // инфиксный обход узлов дерева
   struct InOrderTraversalStrategy final : TraversalStrategy {
