@@ -6,6 +6,8 @@
 
 namespace classwork {
 
+  inline constexpr char kDelimiter = '\t';
+
   /**
    * Интерфейс обхода узлов двоичного дерева.
    */

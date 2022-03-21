@@ -6,8 +6,6 @@
 
 namespace classwork {
 
-  static constexpr char kDelimiter = '\t';
-
   // инфиксный обход - L(left) N(node) R(right)
   void InOrderTraversalStrategy::Print(Node* node, std::ostream& os) const {
     // Write your code here ...
