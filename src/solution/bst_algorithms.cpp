@@ -19,7 +19,6 @@ namespace classwork {
   }
 
   int compute_tree_size(Node* node) {
-    // Write you code here ...
 
     if (node == nullptr) {
       return 0;
